@@ -3,6 +3,12 @@ from joblib import load
 import numpy as np
 import pandas as pd
 
+st.title("Laptop Price Predictor Tool")
+col1, col2 = st.columns(2)
+with col1:
+    st.image('laptop.jpg')
+with col2:
+st.markdown(""" #### Enter Your Specifications"""
 # Import the model
 regressor = load('regressor.joblib')
 df = load('data.joblib')
