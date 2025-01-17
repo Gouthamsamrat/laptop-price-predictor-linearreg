@@ -12,8 +12,7 @@ with col2:
     # Import the model
     regressor = load('regressor.joblib')
     df = load('data.joblib')
-    
-    st.title("Laptop Price Predictor")
+
     
     # Brand
     company = st.selectbox('Brand', df['Company'].unique())
